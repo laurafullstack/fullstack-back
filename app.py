@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def template():
-    """Module app route"""
+    """Prepara el pedido plantilla"""
     return render_template("prepara_pedido.html")
 
 @app.route("/pizza", methods=['POST'])
