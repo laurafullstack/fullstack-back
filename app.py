@@ -33,9 +33,9 @@ nombre_pedidos = [
 nombre_cliente= [dictionary["nombre"] for dictionary in nombre_pedidos]
 apellidos_cliente= [dictionary["apellidos"] for dictionary in nombre_pedidos]
 
-for i, nombre in enumerate(nombre_cliente):
-    n = nombre[i]
-    for j, apellidos in enumerate (apellidos_cliente):
-        a = apellidos[j]
+for i, nombre_cliente in enumerate(nombre_cliente):
+    n = nombre_cliente[i]
+    for j, apellidos_cliente in enumerate (apellidos_cliente):
+        a = apellidos_cliente[j]
         if i == j:
             persistencia.guardar_pedido(n, a)
