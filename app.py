@@ -17,8 +17,8 @@ def template():
 @app.route("/pizza", methods=['POST'])
 def pizza():
     """Module route POST"""
-    nombre_cliente          = request.form.get("nombre-cliente")
-    apellidos_cliente       = request.form.get("apellidos-cliente")
+    nombre          = request.form.get("nombre")
+    apellidos       = request.form.get("apellidos")
 
     print(nombre, apellidos)
 
